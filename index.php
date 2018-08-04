@@ -30,14 +30,19 @@ echo $root;
 //$aluno->insert();
 //echo $aluno;
 
-//Fazendo um update na tabela no banco
+//Alterando um usuario
+//$usuario = new Usuario();
+//$usuario->loadById(13);
+//$usuario->update("professor", "cafe");
+//echo $usuario;
+
+//Deletando um campo na tabela
 $usuario = new Usuario();
-
-$usuario->loadById(13);
-
-$usuario->update("professor", "cafe");
-
+$usuario->loadById(12);
+$usuario->delete();
 echo $usuario;
+
+
 
 
  ?>
